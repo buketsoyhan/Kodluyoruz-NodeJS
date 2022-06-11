@@ -5,16 +5,16 @@ const server = http.createServer((req, res) => {
 
   if (url === "/") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.write("<h1>INDEX SAYFASI</h1>");
+    res.write("<h2>INDEX SAYFASI</h2>");
   } else if (url === "/about") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.write("<h1>HAKKIMDA SAYFASI</h1>");
+    res.write("<h2>HAKKIMDA SAYFASI</h2>");
   } else if (url === "/contact") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.write("<h1>İLETİŞİM SAYFASI</h1>");
+    res.write("<h2>ILETISIM SAYFASI</h2>");
   } else {
     res.writeHead(404, { "Content-Type": "text/html" });
-    res.write("<h1>404 SAYFA BULUNAMADI</h1>");
+    res.write("<h2>404 SAYFA BULUNAMADI</h2>");
   }
 
   res.end();
